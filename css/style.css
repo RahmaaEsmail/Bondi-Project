@@ -1,0 +1,190 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+#home{ 
+    background-color:  var(--dark-color);
+}
+.text-home button{
+    background-color: var(--red-color);
+    color: var(--yellow-color) !important;
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+.nav-item i{
+    color: var(--green-color) !important;
+}
+.nav-item .nav-link{
+    color: white;
+}
+.nav-item .nav-link:hover,
+.nav-item .nav-link:active,
+.nav-item .nav-link:focus
+{
+    color: var(--green-color);
+}
+.active{
+    color: var(--green-color) !important;
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    border: 1px solid white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: unset;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+ border-color: var(--green-color);
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color) !important;
+}
+.main-btn:focus{
+    box-shadow: 0 0 0 0;
+}
+
+/* end section1 */
+/* start section2 */
+.title .brdr{
+    width: 100px;
+    height: 3px;
+    background-color: var(--green-color);
+}
+
+.icons svg{
+    left:50%;
+    transform: translate(-50%);
+}
+
+.text-services h3{
+    color: var(--yellow-color);
+}
+.icons .number{
+    font-size: 12rem;
+    color: #eff7fa;
+}
+.icons .pen{
+   color: var(--green-color);
+   z-index: 22;
+   font-size: 4rem;
+}
+/* end section3 */
+/* start section4 */
+#work-section{
+    background-color: var(--section-color);
+}
+#work-section ul .list{
+    font-weight: 500;
+    cursor: pointer;
+}
+#work-section ul .list:hover{
+    color: var(--red-color);
+}
+/* .layer-box{
+    background-color:rgba(51, 209, 204,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:100%;
+    bottom:0;
+}
+.box img:hover .layer-box{
+    right: 0 !important;
+} */
+#work-section .box{
+    padding: 5px;
+}
+#work-section .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color:rgba(51, 209, 204,0.5);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px ;
+    transform: translateX(calc(-100% - 5px));
+    transition: all 0.5s;
+}
+#work-section .box:hover::before{
+transform: translateX(0);
+}
+/* end section4 */
+/* start section5 */
+.team{
+    background-color:var(--section-color);
+}
+.box-team h3{
+    background-color: var(--green-color);
+}
+/* end section5 */
+/*start section6 */
+.start-project{
+    background-color: var(--dark-color);
+}
+/* end section6 */
+/*start section 8 */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="email"]:focus
+{
+   outline: none;
+}
+.subscribe ::placeholder{
+    color: white;
+}
+.subscribe button{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/*emd section 8 */
+/* start section9 */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .green{
+    color: var(--green-color);
+}
+.footer .yellow{
+    color: var(--yellow-color);
+}
+.footer .main-btn a{
+    color: var(--yellow-color) !important;
+}
+.contact-footer ul svg{
+    width: 20px;
+    height: 20px;
+}
+.contact-footer ul .facebook{
+    background-color: #1877f2;
+}
+.contact-footer ul .twitter{
+    background-color: #1da1f2;
+}
+.contact-footer ul .linkedin{
+    background-color: #0077b5;
+}
+.contact-footer ul .youtube{
+    background-color: #ff0000;
+}
+/* end section9 */
